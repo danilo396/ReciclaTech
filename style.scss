@@ -1,0 +1,420 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+}
+
+.Logo {
+  width: 200px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.botao {
+  background-color: rgb(2, 135, 11);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 48px; 
+  margin-bottom: 20px;
+}
+
+.container p {
+  font-size: 20px; 
+  margin-bottom: 40px;
+  max-width: 700px;
+}
+
+.main-content{
+   display: flex;
+  flex-direction: row;
+}
+
+.Reciclagem{
+  display: flex;
+  flex-direction: row;
+}
+
+.botoes-container {
+  display: flex;
+  justify-content: left;
+  gap: 20px; 
+  padding-left: 160px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 18px; 
+  font-family: 'Arial', sans-serif;
+  padding: 15px 30px; 
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-align: center;
+}
+
+.doar-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  &:hover {
+    background-color: #218838;
+  }
+}
+
+.adquirir-btn {
+  background-color: white;
+  color: #136ee4;
+  border: 1px solid #1770e4;
+  &:hover {
+    background-color: #f0f8ff;
+  }
+}
+
+.Group32 {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.statistics {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 40px;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 30px;
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+.stat-label {
+  font-size: 16px;
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .Reciclagem {
+    max-width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .statistics {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .stat-item {
+    margin: 10px 0;
+  }
+}
+
+.como-funciona {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  margin: 50px 0;
+  padding-left: 70px;
+
+  .titulo {
+    font-size: 40px; 
+    font-weight: bold; 
+    margin-bottom: 10px; 
+  }
+
+  .descricao {
+    font-size: 25px; 
+    color: #555; 
+    max-width: 600px;
+    line-height: 1.5; 
+  }
+}
+
+.caixa1{
+   background-color: #e2e2e2; 
+    padding: 30px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 80%; 
+    margin: 0 auto; 
+}
+
+.passo{
+  display: block;
+  margin-bottom: 30px;
+}
+
+.caixa2{
+  background-color: #e2e2e2; 
+    padding: 30px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 80%; 
+    margin: 0 auto; 
+}
+
+.caixao{
+  display: flex;
+  gap: 30px;
+  margin: 0 auto;
+  padding: 90px;
+}
+
+.Produtos{
+    display: flex;
+    background-color: #e2e2e2; 
+    padding: 30px;
+    border-radius: 10px; 
+    margin: 0 auto;
+}
+
+.Fone{
+  display: block;
+  margin: 0 auto 30px auto;
+  text-align: center;
+}
+
+.botao-adquirir {
+  background-color: #28a745;
+  color: white;               
+  font-size: 16px;         
+  padding: 10px 20px;       
+  border: none;            
+  border-radius: 5px; 
+}
+.Notebooks{
+  display: block;
+  margin: 0 auto 30px auto;
+}
+
+.Smartphones{
+  display: flex;
+  margin: 0 auto 30px auto;
+}
+
+.Fones{
+  justify-content: center;          
+  border: 2px solid #28a745;        
+  border-radius: 10px;              
+  background-color: white;
+  text-align: center;     
+  margin-left: 80px;       
+}
+
+.Phones{
+  justify-content: center;                
+  border: 2px solid #28a745;        
+  border-radius: 10px;              
+  padding: 1px;                                
+  background-color: white;    
+  text-align: center; 
+  margin-right: 80px;
+}
+
+.Pc{                  
+  border: 2px solid #28a745;        
+  border-radius: 10px;              
+  padding: 2px;                                   
+  background-color: white;  
+  text-align: center;             
+}
+
+.Produto2{
+    display: flex;                    
+  background-color: #e2e2e2;       
+  padding: 20px;                    
+  border-radius: 10px;               
+  margin: 0 auto;                   
+  gap: 20px;                        
+  justify-content: space-between;    
+  flex-wrap: wrap;                   
+}
+
+.depoimentos-titulo{
+  display: block;
+  background-color: #ffffff; 
+    padding: 30px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 80%; 
+    margin: 0 auto;  
+}
+.depoimento1 {
+  display: block;
+  background-color: #ffffff; 
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(20, 19, 19, 0.1);
+  
+  width: 300px; 
+  top: 20px; 
+  right: 20px; 
+  
+  margin: 0; 
+}
+
+.joaosantos {
+  display: flex;
+  flex-direction: column; /* Alinha os itens em coluna */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  text-align: center; /* Alinha o texto ao centro */
+
+  img {
+    width: 35px; /* Ajuste o tamanho do ícone conforme necessário */
+    height: 35px;
+    border-radius: 50%;
+    margin-bottom: 10px; /* Dá um espaço entre a imagem e o nome */
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .doador {
+    font-size: 12px; /* Reduz o tamanho da palavra 'Doador' */
+    color: #777; /* Cor cinza para o texto */
+    opacity: 0.6; /* Deixa a palavra "Doador" semi-transparente */
+    margin-top: 5px; /* Dá um pequeno espaço entre o nome e a palavra "Doador" */
+  }
+}
+
+.mariasilva {
+  display: flex;
+  flex-direction: column; /* Alinha os itens em coluna */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  text-align: center; /* Alinha o texto ao centro */
+
+  img {
+    width: 35px; /* Ajuste o tamanho do ícone conforme necessário */
+    height: 35px;
+    border-radius: 50%;
+    margin-bottom: 10px; /* Dá um espaço entre a imagem e o nome */
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .beneficiario {
+    font-size: 12px; /* Reduz o tamanho da palavra 'Doador' */
+    color: #777; /* Cor cinza para o texto */
+    opacity: 0.6; /* Deixa a palavra "Doador" semi-transparente */
+    margin-top: 5px; /* Dá um pequeno espaço entre o nome e a palavra "Doador" */
+  }
+}
+
+.anacosta{
+  display: flex;
+  flex-direction: column; /* Alinha os itens em coluna */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  text-align: center; /* Alinha o texto ao centro */
+
+  img {
+    width: 35px; /* Ajuste o tamanho do ícone conforme necessário */
+    height: 35px;
+    border-radius: 50%;
+    margin-bottom: 10px; /* Dá um espaço entre a imagem e o nome */
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .usu {
+    font-size: 12px; /* Reduz o tamanho da palavra 'Doador' */
+    color: #777; /* Cor cinza para o texto */
+    opacity: 0.6; /* Deixa a palavra "Doador" semi-transparente */
+    margin-top: 5px; /* Dá um pequeno espaço entre o nome e a palavra "Doador" */
+  }
+}
+
+.depoimentos {
+  display: flex;
+  flex-wrap: wrap;  
+  justify-content: space-between; 
+  gap: 20px;
+  margin: 40px 0; }
+
+  .depoimentos-titulo img {
+  display: block;
+  margin: 0 auto 20px;
+}
